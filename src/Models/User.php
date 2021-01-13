@@ -2,6 +2,7 @@
 
 namespace Hexolus\User\Models;
 
+use Hexolus\User\Traits\HasUsername;
 use Hexolus\UUID\Traits\HasUUID;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -10,7 +11,7 @@ use Illuminate\Notifications\Notifiable;
 use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable implements MustVerifyEmail {
-    use HasUUID, HasRoles, Notifiable, SoftDeletes;
+    use HasUUID, HasUsername, HasRoles, Notifiable, SoftDeletes;
 
     public $table = 'users';
     
