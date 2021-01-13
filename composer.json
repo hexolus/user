@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "hexolus/uuid": "dev-main",
+        "hexolus/uuid": "1.x-dev",
         "spatie/laravel-permission": "^3.18"
     },
     "autoload": {
@@ -22,6 +22,9 @@
         ]
     },
     "extra": {
+        "branch-alias": {
+            "dev-main": "1.x-dev"
+        },
         "laravel": {
             "providers": [
                 "Hexolus\\User\\UserServiceProvider"
